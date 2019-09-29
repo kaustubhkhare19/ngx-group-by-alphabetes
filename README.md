@@ -83,5 +83,11 @@ export class AppComponent {
 }
 ```
 
+**CSS**
+
+You can apply your custom CSS to list item and header. `alphabate-value` class for list item and `alphabate-header` class for header.
+Add this CSS classes into `style.css`.
+
+
 ## License
 [MIT](https://tldrlegal.com/license/mit-license) © [Kaustubh Khare](https://github.com/kaustubhkhare19)
