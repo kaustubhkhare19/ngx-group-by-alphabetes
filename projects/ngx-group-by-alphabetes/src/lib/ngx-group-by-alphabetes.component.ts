@@ -1,11 +1,11 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
-  selector: 'group-by-alphabates',
-  templateUrl: './groupbyalphabates.component.html',
-  styleUrls: ['./groupbyalphabates.component.css']
+  selector: 'group-by-alphabetes',
+  templateUrl: './ngx-group-by-alphabetes.component.html',
+  styleUrls: ['./ngx-group-by-alphabetes.component.css']
 })
-export class GroupByAlphabatesComponent implements OnInit {
+export class GroupByAlphabetesComponent implements OnInit {
 
   @Input() input: any[];
   @Input() sortKey: any;
@@ -17,7 +17,6 @@ export class GroupByAlphabatesComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-
     if (this.sortKey === null || this.sortKey === undefined) {
       this.sortKey = '';
     }
@@ -57,4 +56,5 @@ export class GroupByAlphabatesComponent implements OnInit {
   onHeaderClick(header) {
     this.headerClick.next(header);
   }
+
 }

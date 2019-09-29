@@ -17,7 +17,7 @@
                     <div style="margin: 50px 0;">
                         <div style="font-size: 25px;font-weight: 500;">1. Group by Alphabetes without sortKey.</div>
                         <div style="margin: 20px;">
-                                <group-by-alphabates [input]="input1" (itemClick)="name = $event" ></group-by-alphabates>
+                                <group-by-alphabetes [input]="input1" (itemClick)="name = $event" ></group-by-alphabetes>
 
                         <div style="margin: 20px;">Click on list Item  <b>Name:</b> {{name}} </div> 
                         </div>
@@ -26,7 +26,7 @@
                     <div style="margin: 50px 0;">
                         <div style="font-size: 25px;font-weight: 500;">2. Group by Alphabetes with sortKey.</div>
                         <div style="margin: 20px;">
-                                <group-by-alphabates [input]="input" [sortKey]="sortKey" (itemClick)="obj = $event"></group-by-alphabates>
+                                <group-by-alphabetes [input]="input" [sortKey]="sortKey" (itemClick)="obj = $event"></group-by-alphabetes>
                                 <div style="margin: 20px;"> Click on list Item  <b>Name:</b> {{obj | json}} </div> 
                         </div>
                     </div>    

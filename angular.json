@@ -116,6 +116,41 @@
           }
         }
       }
+    },
+    "ngx-group-by-alphabetes": {
+      "projectType": "library",
+      "root": "projects/ngx-group-by-alphabetes",
+      "sourceRoot": "projects/ngx-group-by-alphabetes/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/ngx-group-by-alphabetes/tsconfig.lib.json",
+            "project": "projects/ngx-group-by-alphabetes/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/ngx-group-by-alphabetes/src/test.ts",
+            "tsConfig": "projects/ngx-group-by-alphabetes/tsconfig.spec.json",
+            "karmaConfig": "projects/ngx-group-by-alphabetes/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/ngx-group-by-alphabetes/tsconfig.lib.json",
+              "projects/ngx-group-by-alphabetes/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }
   },
   "defaultProject": "ngx-group-by-alphabates"

@@ -17,6 +17,14 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "ngx-group-by-alphabetes": [
+        "dist/ngx-group-by-alphabetes"
+      ],
+      "ngx-group-by-alphabetes/*": [
+        "dist/ngx-group-by-alphabetes/*"
+      ]
+    }
   }
 }

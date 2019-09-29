@@ -2,9 +2,9 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
-import { GroupByAlphabatesModule } from './groupbyalphabates/groupbyalphabates.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {FlexLayoutModule} from '@angular/flex-layout';
+import { GroupByAlphabetesModule } from 'projects/ngx-group-by-alphabetes/src/public-api';
 
 @NgModule({
   declarations: [
@@ -12,7 +12,7 @@ import {FlexLayoutModule} from '@angular/flex-layout';
   ],
   imports: [
     BrowserModule,
-    GroupByAlphabatesModule,
+    GroupByAlphabetesModule,
     BrowserAnimationsModule,
     FlexLayoutModule
   ],
