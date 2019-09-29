@@ -1,15 +1,41 @@
 {
   "name": "ngx-group-by-alphabates",
   "version": "1.0.0",
+  "description": "Angular library - Group your list alphabetically.",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "build": "ng build --prod",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "packagr": "ng-packagr -p package.json",
   },
-  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kaustubhkhare19/ngx-group-by-alphabetes.git"
+  },
+  "keywords": [
+    "angular2",
+    "angular4",
+    "angular5",
+    "angular6",
+    "angular7",
+    "angular8",
+    "order",
+    "sort",
+    "filter"
+  ],
+  "author": "Kaustubh Khare <kaustubhkhare19@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kaustubhkhare19/ngx-group-by-alphabetes/issues"
+  },
+  "homepage": "https://github.com/kaustubhkhare19/ngx-group-by-alphabetes#readme",
+  "private": false,
+  "peerDependencies": {
+    "@angular/core": ">=5.0.0"
+  },
   "dependencies": {
     "@angular/animations": "~8.0.0",
     "@angular/cdk": "^8.2.1",
@@ -50,5 +76,11 @@
     "tsickle": "^0.35.0",
     "tslint": "~5.15.0",
     "typescript": "~3.4.3"
+  },
+  "$schema": "./node_modules/ng-packagr/package.schema.json",
+  "ngPackage": {
+    "lib": {
+      "entryFile": "public_api.ts"
+    }
   }
 }
