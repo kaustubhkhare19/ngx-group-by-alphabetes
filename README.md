@@ -1,29 +1,85 @@
 # ngx-group-by-alphabates
-Group by your list alphabetically
+Angular library - Group by your list alphabetically
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.0.1.
+It has two way to display list
 
-## Development server
+- Without Sort Key (Array of Strings).
+- With Sort Key (Array of Objects).
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Install
 
-## Code scaffolding
+`npm install ngx-group-by-alphabates --save`
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Usage
 
-## Build
+| Param | Type |  Details |
+| ------ | ------ | ------ | 
+| input | array | array of string or object to group alphabetically.|
+| sortKey | string | Sort key is required for input type array.|
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+**Events**
+- onItemClick(element) - Click event for list item.
+- onHeaderClick(header) - Click event of alphabet header.
 
-## Running unit tests
+Import `GroupByAlphabatesModule` module to your **app.module.ts**
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+```
+import { NgModule } from '@angular/core';
+import { BrowserModule  } from '@angular/platform-browser';
+import { AppComponent } from './app';
 
-## Running end-to-end tests
+import { GroupByAlphabatesModule } from 'ngx-group-by-alphabates';
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+@NgModule({
+  imports: [BrowserModule, GroupByAlphabatesModule],
+  declarations: [AppComponent],
+  bootstrap: [AppComponent]
+})
+export class AppModule {}
+```
+**Without Sort Key (Array of Strings)**
+Input is array or string. For this type `sortKey` is not required.
 
-## Further help
+**In HTML template**
+```
+<group-by-alphabates [input]="input" (itemClick)="obj = $event"></group-by-alphabates>
+```
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+**In Compontent**
+```
+import { Component } from '@angular/core';
 
+@Component({
+  selector: 'app-root',
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.css']
+})
+export class AppComponent {
+  input = ["John", "Mary", "Mike", "Julie", "Adam"];
+}
+```
+**With Sort Key (Array of Objects)**
+Input is array or objects. For this type `sortKey` is required.
+
+**In HTML template**
+```
+<group-by-alphabates [input]="input" [sortKey]="sortKey" (itemClick)="obj = $event"></group-by-alphabates>
+```
+
+**In Compontent**
+```
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'app-root',
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.css']
+})
+export class AppComponent {
+  input = [{"name": "John"}, {"name": "Mary"}, {"name": "Mike"}, {"name": "Julie"}, {"name": "Adam"}];
+  sortKey = 'name';
+}
+```
+
+## License
+[MIT](https://tldrlegal.com/license/mit-license) © [Kaustubh Khare](https://github.com/kaustubhkhare19)
