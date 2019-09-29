@@ -1,0 +1,45 @@
+<div class="top" fxLayoutAlign="column">
+        <div fxFlex="none" class="header">
+                <div class="height100percent" fxLayout="row" fxLayoutAlign="center center">
+                  <div class="title" fxFlex="none">ngx-group-by-alphabates</div>
+            
+                  <div fxFlex=""></div>
+            
+                  <div fxFlex="none">
+                    <iframe src="https://ghbtns.com/github-btn.html?user=kaustubhkhare19&repo=ngx-group-by-alphabates&type=star&count=true"
+                      frameborder="0" scrolling="0" width="170px" height="20px"></iframe>
+                  </div>
+                </div>
+            </div>
+            
+            <div fxFlex="">
+                <div style="margin: 0 15% 0 15%;">
+                    <div style="margin: 50px 0;">
+                        <div style="font-size: 25px;font-weight: 500;">1. Group by Alphabetes without sortKey.</div>
+                        <div style="margin: 20px;">
+                                <group-by-alphabates [input]="input1" (itemClick)="name = $event" ></group-by-alphabates>
+
+                        <div style="margin: 20px;">Click on list Item  <b>Name:</b> {{name}} </div> 
+                        </div>
+                        
+                    </div>
+                    <div style="margin: 50px 0;">
+                        <div style="font-size: 25px;font-weight: 500;">2. Group by Alphabetes with sortKey.</div>
+                        <div style="margin: 20px;">
+                                <group-by-alphabates [input]="input" [sortKey]="sortKey" (itemClick)="obj = $event"></group-by-alphabates>
+                                <div style="margin: 20px;"> Click on list Item  <b>Name:</b> {{obj | json}} </div> 
+                        </div>
+                    </div>    
+                </div>
+            </div>
+            
+            <div fxFlex="none" class="footer">
+                    <div class="height100percent" fxLayout="row" fxLayoutAlign="start center">
+                      <div fxFlex="none" class="fonttwenty margin30">ngx-group-by-alphabates</div>
+                      <div fxFlex=""></div>
+                      <div fxFlex="none" class="link margin30"><a href="https://github.com/kaustubhkhare19/ngx-group-by-alphabetes">Github</a></div>
+                      <div fxFlex="none" class="link margin30"><a href="https://github.com/kaustubhkhare19">Kaustubh Khare</a></div>
+                    </div>
+            </div>
+            
+</div>

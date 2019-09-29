@@ -1,0 +1,15 @@
+<div *ngFor="let group of output">
+  <span class="alphabate-header" (click)="onHeaderClick(group.key)">{{group.key}}</span>
+  <ng-container
+    *ngIf="sortKey === ''; then withoutsortkey; else withsortkey">
+</ng-container>
+
+  <ng-template #withoutsortkey>
+    <div class="alphabate-value" *ngFor="let ele of group.value" (click)="onItemClick(ele)">{{ele}}</div>
+  </ng-template>
+
+  <ng-template #withsortkey>
+    <div class="alphabate-value" *ngFor="let ele of group.value" (click)="onItemClick(ele)">{{ele[sortKey]}}</div>
+  </ng-template>
+  
+</div>

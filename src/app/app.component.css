@@ -1,0 +1,32 @@
+.header, .footer {
+    background-color: #536dfe;
+    color: white;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2), 0 1px 5px 0 rgba(0,0,0,.12);
+    height: 80px;
+}
+
+.height100percent{
+    height: 100%;
+}
+
+.title{
+    font-size: 30px;
+    margin-left: 50px;
+}
+
+.fonttwenty{
+    font-size: 20px;
+}
+
+.margin30 {
+    margin: 30px;
+}
+
+.link, a:-webkit-any-link {
+    color: white;
+    text-decoration: none;
+}
+
+.top {
+    flex-direction: column !important;
+}
