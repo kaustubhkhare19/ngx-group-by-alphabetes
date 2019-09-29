@@ -6,6 +6,8 @@ It has two way to display list
 - Without Sort Key (Array of Strings).
 - With Sort Key (Array of Objects).
 
+**Note** :- Sorting will be done within the component with ascending order(A-Z).
+
 ## Install
 
 `npm install ngx-group-by-alphabates --save`
