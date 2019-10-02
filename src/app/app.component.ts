@@ -12,4 +12,7 @@ export class AppComponent {
   sortKey = 'name';
 
   input1 = ["John", "Mary", "Mike", "Julie", "Adam"];
+
+  name = '';
+  obj = {};
 }

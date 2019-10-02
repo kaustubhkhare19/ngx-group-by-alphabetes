@@ -10,7 +10,7 @@ It has two way to display list
 
 ## Install
 
-`npm install ngx-group-by-alphabates --save`
+`npm install ngx-group-by-alphabetes --save`
 
 ## Usage
 

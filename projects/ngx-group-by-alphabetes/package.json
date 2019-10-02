@@ -1,8 +1,29 @@
 {
   "name": "ngx-group-by-alphabetes",
-  "version": "0.0.1",
+  "version": "1.0.0",
+  "description": "Angular library - Group your list alphabetically.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kaustubhkhare19/ngx-group-by-alphabetes.git"
+  },
+  "keywords": [
+    "angular5",
+    "angular6",
+    "angular7",
+    "angular8",
+    "order",
+    "sort",
+    "filter",
+    "alphabetically"
+  ],
+  "author": "Kaustubh Khare <kaustubhkhare19@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kaustubhkhare19/ngx-group-by-alphabetes/issues"
+  },
+  "homepage": "https://github.com/kaustubhkhare19/ngx-group-by-alphabetes#readme",
   "peerDependencies": {
-    "@angular/common": "^8.0.1",
-    "@angular/core": "^8.0.1"
+    "@angular/common": "^5.0.1",
+    "@angular/core": "^5.0.1"
   }
 }

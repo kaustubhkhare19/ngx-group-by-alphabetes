@@ -1,5 +1,5 @@
 {
-  "name": "ngx-group-by-alphabates",
+  "name": "ngx-group-by-alphabetes",
   "version": "1.0.0",
   "description": "Angular library - Group your list alphabetically.",
   "scripts": {
@@ -9,7 +9,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "packagr": "ng-packagr -p package.json",
+    "packagr": "ng-packagr -p package.json"
   },
   "repository": {
     "type": "git",
