@@ -1,4 +1,4 @@
-# ngx-group-by-alphabates
+# ngx-group-by-alphabetes
 Angular library - Group by your list alphabetically
 
 It has two way to display list
