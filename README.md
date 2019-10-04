@@ -23,17 +23,17 @@ It has two way to display list
 - onItemClick(element) - Click event for list item.
 - onHeaderClick(header) - Click event of alphabet header.
 
-Import `GroupByAlphabatesModule` module to your **app.module.ts**
+Import `GroupByAlphabetesModule` module to your **app.module.ts**
 
 ```
 import { NgModule } from '@angular/core';
 import { BrowserModule  } from '@angular/platform-browser';
 import { AppComponent } from './app';
 
-import { GroupByAlphabatesModule } from 'ngx-group-by-alphabates';
+import { GroupByAlphabetesModule } from 'ngx-group-by-alphabetes';
 
 @NgModule({
-  imports: [BrowserModule, GroupByAlphabatesModule],
+  imports: [BrowserModule, GroupByAlphabetesModule],
   declarations: [AppComponent],
   bootstrap: [AppComponent]
 })
@@ -44,7 +44,7 @@ Input is array or string. For this type `sortKey` is not required.
 
 **In HTML template**
 ```
-<group-by-alphabates [input]="input" (itemClick)="obj = $event"></group-by-alphabates>
+<group-by-alphabetes [input]="input" (itemClick)="obj = $event"></group-by-alphabetes>
 ```
 
 **In Compontent**
@@ -65,7 +65,7 @@ Input is array or objects. For this type `sortKey` is required.
 
 **In HTML template**
 ```
-<group-by-alphabates [input]="input" [sortKey]="sortKey" (itemClick)="obj = $event"></group-by-alphabates>
+<group-by-alphabetes [input]="input" [sortKey]="sortKey" (itemClick)="obj = $event"></group-by-alphabetes>
 ```
 
 **In Compontent**
@@ -85,7 +85,7 @@ export class AppComponent {
 
 **CSS**
 
-You can apply your custom CSS to list item and header. `alphabate-value` class for list item and `alphabate-header` class for header.
+You can apply your custom CSS to list item and header. `alphabete-value` class for list item and `alphabete-header` class for header.
 Add this CSS classes into `style.css`.
 
 
