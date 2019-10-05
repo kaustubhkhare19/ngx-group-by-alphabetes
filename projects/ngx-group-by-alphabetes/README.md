@@ -21,7 +21,7 @@ It has two way to display list
 
 **Events**
 - onItemClick(element) - Click event for list item.
-- onHeaderClick(header) - Click event of alphabet header.
+- onHeaderClick(header) - Click event for alphabet header.
 
 Import `GroupByAlphabetesModule` module to your **app.module.ts**
 
