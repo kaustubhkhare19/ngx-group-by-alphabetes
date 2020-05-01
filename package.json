@@ -76,7 +76,8 @@
     "tsickle": "^0.35.0",
     "tslint": "~5.15.0",
     "typescript": "~3.4.3",
-    "minimist": ">=1.2.3"
+    "minimist": ">=1.2.3",
+    "kind-of": ">=6.0.3"
   },
   "$schema": "./node_modules/ng-packagr/package.schema.json",
   "ngPackage": {
